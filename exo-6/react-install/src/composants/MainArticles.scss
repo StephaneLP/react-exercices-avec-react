@@ -1,0 +1,15 @@
+.main-articles {
+    width: 900px;
+    margin: 0 auto;
+
+    article {
+        padding: 10px;
+        margin-bottom: 20px;
+        box-shadow: 0 0 15px darkgrey;
+
+        h2 {
+            text-align: center;
+            color: #d4a200;
+        }
+    }
+}
