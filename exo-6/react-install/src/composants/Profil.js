@@ -13,7 +13,7 @@ const Profil = () => {
             <p>Métier : {user.job}</p>
             <p>Age : {user.age}</p>
             <p>
-                 Hobbies : {user.hobbies.map((el) => {
+                Hobbies : {user.hobbies.map((el) => {
                     return(
                         <span>{el} </span>
                     )
