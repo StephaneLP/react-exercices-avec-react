@@ -1,0 +1,17 @@
+.main-images {
+    width: 900px;
+    margin: 0 auto;
+
+    img {
+        width: 100%;
+        border: 1px solid black;
+        box-shadow: 5px 5px 5px darkgrey;
+    }
+
+    span {
+        font-size: 1.2rem;
+        font-style: italic;
+        display:inline-block;
+        margin-bottom: 20px;
+    }
+}
