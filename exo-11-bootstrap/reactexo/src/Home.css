@@ -1,0 +1,43 @@
+header {
+    background-color: #2e2e2e;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 10vh;
+}
+
+main {
+    height: 80vh;;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 0 10px;
+    color: white;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.container .row div {
+    height: 300px;
+    margin-bottom: 20px;
+}
+
+.container .row div .article{
+    border: 1px solid grey;
+}
+
+footer {
+    background-color: #2e2e2e;
+    height: 10vh;
+}

@@ -1,6 +1,6 @@
-import Header from './composants/Header.js'
-import Main from './composants/Main.js'
-import Footer from './composants/Footer.js'
+import Header from './composants/header/Header.js'
+import Main from './composants/main/Main.js'
+import Footer from './composants/footer/Footer.js'
 
 const menuItems = [
     {

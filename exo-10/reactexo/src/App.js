@@ -1,5 +1,5 @@
+import CreateProduct from "./createProduct";
 import ArticlesListe from "./ArticlesList";
-import HighLightArticle from "./HighLightArticle";
 
 const articles = [
     {
@@ -22,8 +22,8 @@ const articles = [
 function App() {
   return (
     <div>
-        <ArticlesListe articles={articles}/>
-        <HighLightArticle articles={articles[0]}/>
+        <ArticlesListe articles={articles} />
+        <CreateProduct />
     </div>
   );
 }
