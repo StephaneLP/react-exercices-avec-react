@@ -1,5 +1,5 @@
 import './Home.css'
-import Button from './Button'
+import Citation from './Citation'
 
 const Home = () => {
     return (
@@ -42,15 +42,8 @@ const Home = () => {
                     </div>
                 </nav>
             </header>
-            <main className="d-flex align-items-center">
-                <section className="container">
-                    <div className="row">
-                        <div className="col-12 col-md-4 col-lg-4"><div className="col-12 article"></div></div>
-                        <div className="col-12 col-md-4 col-lg-4"><div className="col-12 article"></div></div>
-                        <div className="col-12 col-md-4 col-lg-4"><div className="col-12 article"></div></div>
-                        <div className='col-12 text-center'><Button classe=".article" /></div>
-                    </div>
-                </section>
+            <main className="d-flex justify-content-center align-items-center">
+                <Citation />
             </main>
             <footer>
             </footer>            

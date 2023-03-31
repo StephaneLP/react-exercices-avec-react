@@ -10,6 +10,7 @@ header {
 main {
     height: 80vh;;
 }
+
 nav ul {
     display: flex;
     flex-direction: row;
