@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import './RecipesList.css'
 
-const RecipesList = () => {
+const RecipesListImages = () => {
     const[recipesfromApi, setRecipesfromApi] = useState(false)
 
     useEffect(() => {
@@ -21,8 +21,6 @@ const RecipesList = () => {
                     return (
                         <article key={el.idMeal}>
                             <h2>Nom : {el.strMeal}</h2>
-                            <a href={el.strSource} target="blank">Source</a>
-                            <p>Recette : {el.strInstructions}</p>
                             <img src={el.strMealThumb}></img>
                         </article>                    
                     )
@@ -35,4 +33,4 @@ const RecipesList = () => {
     )
 }
 
-export default RecipesList
+export default RecipesListImages

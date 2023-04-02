@@ -5,7 +5,7 @@ const Home = () => {
         <>
             <header>
                 <nav>
-                    <ul>
+                    <ul>tabindex
                         <li>Accueil</li>
                         <li>Page 1</li>
                         <li>Page 2</li>
