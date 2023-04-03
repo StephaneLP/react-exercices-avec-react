@@ -19,7 +19,7 @@ function App() {
     return (
         <div>
             <button onClick={affichePlats}>Afficher les plats</button>
-            <button onClick={affichePlatsImages}>Afficher les images uniquement</button>
+            <button onClick={affichePlatsImages}>Afficher les images uniquement !</button>
             {blnAffiche && <RecipesList />}
             {blnAfficheImages && <RecipesListImages />}
         </div>
