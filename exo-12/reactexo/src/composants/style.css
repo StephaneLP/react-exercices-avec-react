@@ -1,0 +1,15 @@
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.header-logo {
+    width: 100px;
+}
+
+.divexo {
+    padding: 5px;
+    margin: 5px 0;
+    background-color: lightgrey;
+}
