@@ -1,0 +1,23 @@
+[
+    {
+      "id": 1,
+      "title": "React",
+      "url": "https://reactjs.org/",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/1280px-React-icon.svg.png",
+      "description": "A JavaScript library for building user interfaces"
+    },
+    {
+      "id": 2,
+      "title": "Angular",
+      "url": "https://angular.io/",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/1280px-Angular_full_color_logo.svg.png",
+      "description": "One framework. Mobile & desktop."
+    },
+    {
+      "id": 3,
+      "title": "Vue",
+      "url": "https://vuejs.org/",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1280px-Vue.js_Logo_2.svg.png",
+      "description": "The Progressive JavaScript Framework"
+    }
+  ]
