@@ -1,0 +1,82 @@
+body {
+    background-color: #4a5458;
+}
+
+.recettes {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.recettes h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+.recettes h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin: 10px 0 20px;
+}
+
+.recettes button {
+    margin: 2px;
+    padding: 5px 10px;
+    background-color: #4a5458;
+    border: 0px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.recettes button:hover {
+    background-color: #417488;
+}
+
+.recettes > div {
+}
+
+.choixPlat {
+    /* height: 335px; */
+    text-align: center;
+    padding: 184px 0;
+}
+
+.detailsPlat {
+    margin-top: 20px;
+    border: 1px solid grey;
+    border-radius: 5px;
+    background-color: #aec8d3;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.detailsPlat img {
+    border: 5px solid white;
+    border-radius: 5px;;
+    box-shadow: 5px 5px 5px grey;
+}
+
+.detailsInfos {
+    padding-left: 15px;
+}
+
+.detailsInfos h3 {
+    font-size: 1rem;
+    margin: 0;
+    display:inline-block;
+}
+
+.detailsInfos p {
+    margin: 5px 0 10px;;
+}
+
+.detailsRecette {
+    height: 200px;
+    overflow: auto;
+}
