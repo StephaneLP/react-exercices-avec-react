@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import Header from "./Header"
 import "./style.css"
 
 const MealList = () => {
@@ -27,47 +28,50 @@ const MealList = () => {
     }
 
     return (
-        <section className="recettes">
-            <h1>Recettes de cuisine</h1>
-            <div style={{textAlign: "center"}}>
-            {mealsList.length !== 0 ?
-                (
-                    mealsList.map((el) => {
-                    return (
-                        <button key={el.idMeal} onClick={() => handleClick(el.idMeal)}>{el.strMeal}</button>
-                    )})
-                )
-                :
-                (
-                    <span>CHARGEMENT...</span>
-                )
-            }
-            </div>
-            {mealDetails.length !== 0 ?
-                (
-                    <div className="detailsPlat">
-                        <div>
-                            <img style={{width: 400 + "px"}} src={mealDetails.strMealThumb}></img> 
+        <>
+            <Header />
+            <section className="recettes">
+                <h1>Recettes de cuisine</h1>
+                <div style={{textAlign: "center"}}>
+                {mealsList.length !== 0 ?
+                    (
+                        mealsList.map((el) => {
+                        return (
+                            <button key={el.idMeal} onClick={() => handleClick(el.idMeal)}>{el.strMeal}</button>
+                        )})
+                    )
+                    :
+                    (
+                        <span>CHARGEMENT...</span>
+                    )
+                }
+                </div>
+                {mealDetails.length !== 0 ?
+                    (
+                        <div className="detailsPlat">
+                            <div>
+                                <img style={{width: 400 + "px"}} src={mealDetails.strMealThumb}></img> 
+                            </div>
+                            <div className="detailsInfos">
+                                <h2>{mealDetails.strMeal}</h2>
+                                <h3>Catégorie : </h3>
+                                <p>{mealDetails.strCategory}</p>
+                                <h3>Région : </h3>
+                                <p>{mealDetails.strArea}</p>
+                                <h3>Recette : </h3>
+                                <p className="detailsRecette">{mealDetails.strInstructions}</p>
+                            </div>
                         </div>
-                        <div className="detailsInfos">
-                            <h2>{mealDetails.strMeal}</h2>
-                            <h3>Catégorie : </h3>
-                            <p>{mealDetails.strCategory}</p>
-                            <h3>Région : </h3>
-                            <p>{mealDetails.strArea}</p>
-                            <h3>Recette : </h3>
-                            <p className="detailsRecette">{mealDetails.strInstructions}</p>
+                    )
+                    :
+                    (
+                        <div className="choixPlat">
+                            <h2>Veuillez choisir un plat SVP</h2>
                         </div>
-                    </div>
-                )
-                :
-                (
-                    <div className="choixPlat">
-                        <h2>Veuillez choisir un plat SVP</h2>
-                    </div>
-                )
-            }
-        </section>
+                    )
+                }
+            </section>
+        </>
     )
 }
 

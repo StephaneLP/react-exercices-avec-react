@@ -2,7 +2,41 @@ body {
     background-color: #4a5458;
 }
 
-.recettes {
+header nav {
+    width: 1000px;
+    margin: 10px auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;   
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+header nav ul li {
+    margin-left: 30px;
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+header nav ul li a {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: #4a5458;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+header nav ul li a.actif {
+    border: 1px solid grey;
+    padding: 5px 10px;
+}
+
+section {
     width: 1000px;
     margin: 0 auto;
     padding: 10px;
@@ -54,7 +88,7 @@ body {
 
 .detailsPlat img {
     border: 5px solid white;
-    border-radius: 5px;;
+    border-radius: 5px;
     box-shadow: 5px 5px 5px grey;
 }
 
