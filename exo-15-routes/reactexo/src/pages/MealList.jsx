@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react"
-import Header from "./Header"
-import "./style.css"
+import Header from "../common/Header"
 
 const MealList = () => {
     const[mealsList, setMealsList] = useState([])

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import Header from "./Header"
+import Header from "../common/Header"
 
 const MealRandom = () => {
     const [meal, setMeal] = useState(null)
